@@ -1,4 +1,3 @@
-import React from 'react';
 import flagRightLogo from '../assets/img/logo.jpg';
 import '../assets/css/ComingSoon.css'
 

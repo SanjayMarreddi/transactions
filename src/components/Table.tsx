@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
-import { sortRows, filterRows, paginateRows, readValue } from './helpers';
+import { sortRows, filterRows, paginateRows, readValue } from './utilities';
 import { Pagination } from './Pagination';
-import {Transaction, Column, Filter} from './types';
+import { Transaction, Column, Filter } from './types';
 import { getTransactions, TOTAL_LENGTH } from "./transaction";
 import Switch from "react-switch";
 import '../assets/css/Table.css';
@@ -42,7 +42,7 @@ export const Table = () => {
   const calculatedRows = paginateRows(sortedRows, 1, rowsPerPage)
   
   // To perform Sorting and Filtering in the Mock API itself, use below code instead and
-  // also uncomment update the fetchTransactions and corresponding useEffect.    
+  // also uncomment the fetchTransactions and corresponding useEffect.    
   // const calculatedRows = paginateRows(transactions, 1, rowsPerPage);
 
   const fetchTransactions = async () => {

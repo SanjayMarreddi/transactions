@@ -90,7 +90,7 @@
       if (isNil(aVal)) return 1
       if (isNil(bVal)) return -1
       
-      if (typeof aVal == 'number'){
+      if (typeof aVal == 'number' || typeof bVal == 'number'){
         if (order === 'asc'){
           return aVal - bVal;
         }

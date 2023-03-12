@@ -3,8 +3,8 @@ import { Page } from "./types";
 export const Pagination = ( props: Page ) => {
 
     const {activePage, count, rowsPerPage, totalPages, setActivePage} = props;
-    const beginning = activePage === 1 ? 1 : rowsPerPage * (activePage - 1) + 1
-    const end = activePage === totalPages ? count : beginning + rowsPerPage - 1
+    const beginning = activePage === 1 ? 1 : rowsPerPage * (activePage - 1) + 1;
+    const end = activePage === totalPages ? count : beginning + rowsPerPage - 1;
   
     return (
       <div>

@@ -1,4 +1,4 @@
-import { filterRows, sortRows } from './helpers';
+import { filterRows, sortRows } from './utilities';
 import { Transaction, Filter, Sort } from './types';
 
 const data = [
